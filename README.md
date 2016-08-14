@@ -14,15 +14,13 @@ To install Publify you need the following:
 - ImageMagick (used by mini_magick).
 
 1.  Clone the repo
+2.  `cp database.yml.example database.yml`
 3.  Edit database.yml to add your database name, login and password.
-3.  Run:
+4.  Run:
 
 ```bash
-$ bundle install
-$ rake db:setup
-$ rake db:migrate
-$ rake db:seed
-$ rake assets:precompile
+$ bundle
+$ rake db:setup db:migrate db:seed assets:precompile
 $ rails server
 ```
 
