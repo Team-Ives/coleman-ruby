@@ -2,12 +2,8 @@ sudo: false
 language: ruby
 cache: bundler
 rvm:
-  - 2.1
-  - 2.2
-  - 2.3.0
+  - 2.2.5
 env:
-  - DB=sqlite
-  - DB=mysql
   - DB=postgresql
 install:
   - bundle install --without development
